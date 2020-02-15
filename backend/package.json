@@ -1,0 +1,11 @@
+{
+  "name": "factoryfits",
+  "version": "1.0.0",
+  "description": "eshop backend graphql_yoga_prisma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikolaos Petronikolos",
+  "license": "ISC"
+}
