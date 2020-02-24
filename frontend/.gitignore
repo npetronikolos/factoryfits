@@ -9,8 +9,7 @@ pids
 *.pids
 *.seed
 build/Release
-**/frontend/node_modules
-**/backend/node_modules
+**/node_modules
 .DS_Store
 **/.next
 
