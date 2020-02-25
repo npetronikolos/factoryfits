@@ -1,4 +1,4 @@
 # factoryfits
-graphql_yoga_prisma_apollo_nextjs
+graphql_prisma_apollo_nextjs
 
 just learning
