@@ -12,6 +12,11 @@ build/Release
 **/node_modules
 .DS_Store
 **/.next
+**/.next/
+
+variables.env
+**/.build/
+
 
 
 
