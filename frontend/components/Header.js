@@ -5,17 +5,18 @@ import Nprogress from "nprogress";
 
 import Nav from "./Nav";
 
-Router.onRouteChangeStart = () => {
-  NProgress.start();
-};
+// TODO Router.onRoutechangeStart etc causes errors
+// Router.onRouteChangeStart = () => {
+//   NProgress.start();
+// };
 
-Router.onRouteChangeComplete = () => {
-  NProgress.done();
-};
+// Router.onRouteChangeComplete = () => {
+//   NProgress.done();
+// };
 
-Router.onRouteChangeError = () => {
-  NProgress.done();
-};
+// Router.onRouteChangeError = () => {
+//   NProgress.done();
+// };
 
 const Logo = styled.h1`
   font-size: 4rem;
