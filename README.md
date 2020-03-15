@@ -1,4 +1,5 @@
 # factoryfits
-graphql_prisma_apollo_nextjs
+frontend nextjs-apollo client
+graphql-prisma-apollo server
 
 just learning
