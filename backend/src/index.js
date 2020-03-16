@@ -7,9 +7,13 @@ const { prisma } = require("../generated/prisma-client/index");
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  engine: {
+    apiKey: "service:warehouse:vQcveOscJ4H4KcGVkhbnlQ"
+  },
   context: {
     prisma
-  }
+  },
+  context: (req) => ({ ...req, prisma })
 });
 
 server

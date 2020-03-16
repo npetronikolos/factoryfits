@@ -1,29 +1,23 @@
+// const { forwardTo } = require("prisma-binding");
+
 const resolvers = {
   Query: {
-    hello: () => "Hello World"
+    // items: forwardTo("prisma") // TODO does not work
+    items: async (parent, args, ctx, info) => {
+      const items = await ctx.prisma.items();
+      return items;
+    }
   },
 
   Mutation: {
-    // createItem: async (
-    //   parent,
-    //   { title, description, price, image, largeImage },
-    //   ctx,
-    //   info
-    // ) => {
-    //   const item = await ctx.prisma.createItem({
-    //     title,
-    //     description,
-    //     price,
-    //     image,
-    //     largeImage
-    //   });
-    //   return item;
-    // }
-
     createItem: async (parent, args, ctx, info) => {
-      const item = await ctx.prisma.createItem({
-        ...args
-      });
+      // TODO check if user is logged in
+      const item = await ctx.prisma.createItem(
+        {
+          ...args
+        },
+        info
+      );
       return item;
     }
   }
