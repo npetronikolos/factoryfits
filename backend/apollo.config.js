@@ -1,6 +1,6 @@
 module.exports = {
   client: {
+    name:'warehouse [web]'
     service: "warehouse",
-    url: "http://localhost:8383"
   }
 };

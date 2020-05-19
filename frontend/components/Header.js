@@ -1,7 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
 import Router from "next/router";
-import Nprogress from "nprogress";
 
 import Nav from "./Nav";
 

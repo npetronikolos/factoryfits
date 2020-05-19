@@ -1,6 +1,6 @@
 import * as React from "react";
 import { NextPage } from "next";
-// import Link from "next/link";
+import Link from "next/link";
 
 const Sell: NextPage = () => {
   return (
